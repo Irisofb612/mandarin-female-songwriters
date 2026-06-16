@@ -1,0 +1,47 @@
+<!doctype html>
+<html lang="zh-Hans">
+  <head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="台湾女性创作歌手档案列表。">
+    <title>歌手列表｜台湾女性创作歌手档案馆</title>
+    <link rel="stylesheet" href="styles.css">
+  </head>
+  <body>
+    <header class="site-header">
+      <a class="brand" href="index.html">TW / SONGWRITERS</a>
+      <nav aria-label="主要导航">
+        <a href="index.html">首页</a>
+        <a class="active" href="singers.html">歌手列表</a>
+      </nav>
+    </header>
+
+    <main class="section-shell page-top">
+      <div class="list-intro">
+        <div>
+          <p class="eyebrow">Archive index</p>
+          <h1>歌手列表</h1>
+        </div>
+        <p>从民谣、摇滚到电子与台语创作，按姓名或音乐风格寻找一位创作者。</p>
+      </div>
+
+      <div class="filter-bar">
+        <label>
+          <span>搜索</span>
+          <input id="search-input" type="search" placeholder="输入歌手、别名或风格">
+        </label>
+        <p id="result-count"></p>
+      </div>
+
+      <div id="singer-list" class="singer-list"></div>
+    </main>
+
+    <footer class="site-footer">
+      <p>台湾女性创作歌手档案馆</p>
+      <p>点击歌手姓名进入详情页</p>
+    </footer>
+
+    <script src="data.js"></script>
+    <script src="app.js"></script>
+  </body>
+</html>
