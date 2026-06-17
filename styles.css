@@ -87,6 +87,10 @@ nav a:hover {
   white-space: nowrap;
 }
 
+.mobile-title-break {
+  display: inline;
+}
+
 .hero-note {
   align-self: center;
   max-width: 680px;
@@ -861,8 +865,13 @@ blockquote {
 
   .hero h1 {
     margin-top: 80px;
-    font-size: clamp(54px, 16vw, 92px);
-    white-space: normal;
+    font-size: clamp(36px, 9.4vw, 54px);
+    line-height: 0.98;
+    white-space: nowrap;
+  }
+
+  .mobile-title-break {
+    display: block;
   }
 
   .hero-note {
