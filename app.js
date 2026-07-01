@@ -136,13 +136,45 @@ function setupSearch() {
   });
 }
 
+function handleDetailImageError(image) {
+  const fallback = image.dataset.fallback;
+  if (fallback && !image.dataset.usedFallback) {
+    image.dataset.usedFallback = "true";
+    image.src = fallback;
+    return;
+  }
+
+  image.parentElement.outerHTML = `<div class="detail-mark" aria-hidden="true">${image.dataset.initial}</div>`;
+}
+
+function renderDetailVisual(singer) {
+  const placeholder = `<div class="detail-mark" aria-hidden="true">${singer.name.slice(0, 1)}</div>`;
+  const image = singer.albumImage || singer.image;
+  if (!image) return placeholder;
+
+  const fallback = singer.albumImage && singer.image ? singer.image : "";
+  const alt = singer.albumImage ? `${singer.name}的专辑图片` : `${singer.name}的照片`;
+
+  return `
+    <figure class="detail-photo">
+      <img
+        src="${image}"
+        alt="${alt}"
+        data-fallback="${fallback}"
+        data-initial="${singer.name.slice(0, 1)}"
+        onerror="handleDetailImageError(this)"
+      >
+    </figure>
+  `;
+}
+
 function renderDetail() {
   const container = document.querySelector("#singer-detail");
   if (!container) return;
 
   const id = new URLSearchParams(window.location.search).get("id");
   const singer = singers.find((item) => item.id === id) || singers[0];
-  document.title = `${singer.name}｜台湾女性创作歌手档案馆`;
+  document.title = `${singer.name}｜华语女性创作歌手档案馆`;
 
   container.innerHTML = `
     <section class="detail-hero">
@@ -151,10 +183,7 @@ function renderDetail() {
         <h1>${singer.name}</h1>
         <p class="detail-alias">${singer.alias}</p>
       </div>
-      ${singer.image
-        ? `<figure class="detail-photo"><img src="${singer.image}" alt="${singer.name}的照片"></figure>`
-        : `<div class="detail-mark" aria-hidden="true">${singer.name.slice(0, 1)}</div>`
-      }
+      ${renderDetailVisual(singer)}
     </section>
 
     <section class="detail-grid">

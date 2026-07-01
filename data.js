@@ -5,6 +5,7 @@ const singers = [
     id: "chen-qi-zhen",
     number: "NO.001",
     image: "images/chen-qi-zhen.jpg",
+    albumImage: "images/singer-albums/chen-qi-zhen.jpg",
     name: "陈绮贞",
     realName: "陈绮贞",
     alias: "Cheer Chen",
@@ -22,6 +23,7 @@ const singers = [
     id: "chen-shan-ni",
     number: "NO.002",
     image: "images/chen-shan-ni.jpg",
+    albumImage: "images/singer-albums/chen-shan-ni.jpg",
     name: "陈珊妮",
     realName: "陈珊妮",
     alias: "Sandee Chan",
@@ -39,6 +41,7 @@ const singers = [
     id: "an-pu",
     number: "NO.003",
     image: "images/an-pu.jpg",
+    albumImage: "images/singer-albums/an-pu.jpg",
     name: "安溥",
     realName: "焦安溥",
     alias: "张悬 / Deserts Chang",
@@ -55,6 +58,7 @@ const singers = [
   {
     id: "wei-ru-xuan",
     number: "NO.004",
+    albumImage: "images/singer-albums/wei-ru-xuan.jpg",
     name: "魏如萱",
     realName: "魏如萱",
     alias: "Waa Wei",
@@ -71,6 +75,7 @@ const singers = [
   {
     id: "xu-jia-ying",
     number: "NO.005",
+    albumImage: "images/singer-albums/xu-jia-ying.jpg",
     name: "徐佳莹",
     realName: "徐佳莹",
     alias: "Lala Hsu",
@@ -87,6 +92,7 @@ const singers = [
   {
     id: "ai-yi-liang",
     number: "NO.006",
+    albumImage: "images/singer-albums/ai-yi-liang.jpg",
     name: "艾怡良",
     realName: "艾怡良",
     alias: "Eve Ai",
@@ -103,6 +109,7 @@ const singers = [
   {
     id: "zheng-yi-nong",
     number: "NO.007",
+    albumImage: "images/singer-albums/zheng-yi-nong.jpg",
     name: "郑宜农",
     realName: "郑宜农",
     alias: "Enno Cheng",
@@ -119,6 +126,7 @@ const singers = [
   {
     id: "9m88",
     number: "NO.008",
+    albumImage: "images/singer-albums/9m88.jpg",
     name: "9m88",
     realName: "汤毓绮",
     alias: "Joanne Tang / 9m88",
@@ -135,6 +143,7 @@ const singers = [
   {
     id: "lei-guang-xia",
     number: "NO.009",
+    albumImage: "images/singer-albums/lei-guang-xia.jpg",
     name: "雷光夏",
     realName: "雷光夏",
     alias: "Summer Lei",
@@ -151,6 +160,7 @@ const singers = [
   {
     id: "huang-xiao-zhen",
     number: "NO.010",
+    albumImage: "images/singer-albums/huang-xiao-zhen.jpg",
     name: "黄小桢",
     realName: "黄小桢",
     alias: "Ze Hwang",
@@ -167,6 +177,7 @@ const singers = [
   {
     id: "wang-ruo-lin",
     number: "NO.011",
+    albumImage: "images/singer-albums/wang-ruo-lin.jpg",
     name: "王若琳",
     realName: "王若琳",
     alias: "Joanna Wang",
@@ -183,6 +194,7 @@ const singers = [
   {
     id: "xu-zhe-pei",
     number: "NO.012",
+    albumImage: "images/singer-albums/xu-zhe-pei.jpg",
     name: "许哲珮",
     realName: "许哲珮",
     alias: "Peggy Hsu",
@@ -199,6 +211,7 @@ const singers = [
   {
     id: "huang-yun-ling",
     number: "NO.013",
+    albumImage: "images/singer-albums/huang-yun-ling.png",
     name: "黄韵玲",
     realName: "黄韵玲",
     alias: "Kay Huang",
@@ -215,6 +228,7 @@ const singers = [
   {
     id: "chen-hui-ting",
     number: "NO.014",
+    albumImage: "images/singer-albums/chen-hui-ting.jpg",
     name: "陈惠婷",
     realName: "陈惠婷",
     alias: "Huiting Chen",
